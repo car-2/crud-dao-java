@@ -3,7 +3,6 @@ package com.iudigital.recursoshumanos.ui;
 import com.iudigital.recursoshumanos.dao.EmployeeDao;
 import com.iudigital.recursoshumanos.dao.EmployeeDaoImplementation;
 import com.iudigital.recursoshumanos.models.Employee;
-import java.util.List;
 import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 
@@ -201,7 +200,6 @@ public class Visualizar extends javax.swing.JFrame {
         DefaultTableModel modelTable = new DefaultTableModel() {
             @Override
             public boolean isCellEditable(int row, int column) {
-                // Todas las celdas no son editables
                 return false;
             }
         };
